@@ -5,5 +5,6 @@
     "version": "0.1.0",
     "full_name": "John Smith",
     "email": "",
-    "python_version": "3.10"
+    "python_version": "3.10",
+    "main_app_name": "my_app"
 }
