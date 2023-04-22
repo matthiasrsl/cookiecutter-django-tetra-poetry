@@ -4,4 +4,7 @@
 {% block title %}{% endraw %}{{cookiecutter.main_app}} - {{cookiecutter.project_name}}{% raw %}{% endblock %}
 {% block body %}{% endraw %}
     <h1>{{cookiecutter.main_app}}</h1>
+
+    <h4>Your to do list:</h4>
+    {{ "{% @ " }}{{cookiecutter.__main_app_slug}}.default.to_do_list{{ " / %}" }}
 {{ "{% endblock %}" }}

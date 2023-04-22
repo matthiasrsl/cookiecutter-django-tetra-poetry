@@ -1,6 +1,7 @@
 #!/bin/bash
 npm install esbuild
 poetry install
+poetry run python manage.py makemigrations
 poetry run python manage.py migrate
 git init --initial-branch=main
 poetry run pre-commit install
