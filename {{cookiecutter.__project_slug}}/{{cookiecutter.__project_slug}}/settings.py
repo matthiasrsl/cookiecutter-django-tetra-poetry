@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "tetra",
     "django.contrib.staticfiles",
+    "{{cookiecutter.__main_app_slug}}",
 ]
 
 MIDDLEWARE = [
@@ -54,12 +55,12 @@ MIDDLEWARE = [
     "tetra.middleware.TetraMiddleware",
 ]
 
-ROOT_URLCONF = "{{cookiecutter.project_slug}}.urls"
+ROOT_URLCONF = "{{cookiecutter.__project_slug}}.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -72,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "{{cookiecutter.project_slug}}.wsgi.application"
+WSGI_APPLICATION = "{{cookiecutter.__project_slug}}.wsgi.application"
 
 
 # Database

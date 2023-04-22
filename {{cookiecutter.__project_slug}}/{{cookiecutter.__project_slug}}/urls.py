@@ -18,7 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+from {{cookiecutter.__main_app_slug}}.views import HomePageView
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("tetra/", include("tetra.urls")),
+    path("app/", include("{{cookiecutter.__main_app_slug}}.urls")),
+    path("", HomePageView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

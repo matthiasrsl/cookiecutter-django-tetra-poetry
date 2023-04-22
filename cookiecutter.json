@@ -1,10 +1,12 @@
 {
     "project_name": "Project Name",
-    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "__project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
     "project_short_description": "My awesome project.",
     "version": "0.1.0",
     "full_name": "John Smith",
     "email": "",
     "python_version": "3.10",
-    "main_app_name": "my_app"
+    "main_app": "To Do App",
+    "__main_app_slug": "{{ cookiecutter.main_app.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "__main_app_pascal": "{{ cookiecutter.__main_app_slug.split('_')|map('capitalize')|join }}"
 }
