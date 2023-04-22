@@ -1,5 +1,5 @@
 # cookiecutter-django-tetra-poetry
-A [https://github.com/cookiecutter/cookiecutter](Cookiecutter) template for creating [Django](https://www.djangoproject.com/) projects with a [Tetra](https://www.tetraframework.com/) frontend, using the [Poetry](https://python-poetry.org/) package manager.
+A [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for creating [Django](https://www.djangoproject.com/) projects with a [Tetra](https://www.tetraframework.com/) frontend, using the [Poetry](https://python-poetry.org/) package manager.
 
 ## Usage
 First, get Cookiecutter:
