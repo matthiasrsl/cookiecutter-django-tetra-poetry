@@ -1,0 +1,18 @@
+{% raw %}{% load tetra %}
+<!DOCTYPE html>
+<html>
+  <head>
+    {% tetra_styles %}
+    {% tetra_scripts include_alpine=True %}
+    <meta charset="utf-8"></meta>
+    <title>{% block title %}{% endraw %}{{cookiecutter.project_name}}{% raw %}{% endblock %}</title>
+  </head>
+
+  <body>
+    {% block body %}{% endraw %}
+      <h1>{{cookiecutter.project_name}}</h1>
+
+      <p>{{cookiecutter.project_short_description}}</p>
+    {{ "{% endblock %}" }}
+  </body>
+</html>
