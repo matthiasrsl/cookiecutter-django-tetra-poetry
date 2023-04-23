@@ -6,7 +6,7 @@
     "full_name": "John Smith",
     "email": "",
     "python_version": "3.10",
-    "main_app": "To Do App",
+    "main_app": "My App",
     "__main_app_slug": "{{ cookiecutter.main_app.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
     "__main_app_pascal": "{{ cookiecutter.__main_app_slug.split('_')|map('capitalize')|join }}"
 }

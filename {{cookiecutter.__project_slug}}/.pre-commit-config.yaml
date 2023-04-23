@@ -40,3 +40,12 @@ repos:
                     "-sn", # Don't display the score
                     "-j 0" # Use all CPUs
                 ]
+    - repo: https://github.com/PyCQA/bandit
+      rev: main
+      hooks:
+      - id: bandit
+        name: bandit
+        description: 'Bandit is a tool for finding common security issues in Python code.'
+        entry: poetry run bandit
+        language: python
+        types: [python]
