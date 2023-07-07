@@ -1,11 +1,12 @@
 #!/bin/bash
 npm install esbuild
 poetry install
+poetry lock --no-update
+poetry export -f requirements.txt -o requirements.txt
 poetry run python manage.py migrate
 git init --initial-branch=main
 poetry run pre-commit install
 poetry run pre-commit install --hook-type commit-msg
-poetry run pre-commit autoupdate
 git add .
 git cm -m "chore: Initial commit."
 echo -e "\n\n\033[1;32mProject successfully set up! 🎉\033[0m\n"

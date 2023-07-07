@@ -20,7 +20,7 @@ from django.urls import include, path
 
 from {{cookiecutter.__main_app_slug}}.views import HomePageView
 
-urlpatterns = [
+urlpatterns = [  # noqa: RUF005
     path("admin/", admin.site.urls),
     path("tetra/", include("tetra.urls")),
     path("app/", include("{{cookiecutter.__main_app_slug}}.urls")),
