@@ -118,6 +118,7 @@ exclude = [
     "manage.py",
     "{{cookiecutter.__project_slug}}/asgi.py",
     "{{cookiecutter.__project_slug}}/wsgi.py",
+    "*/migrations/"
 ]
 
 [tool.ruff.pylint]
